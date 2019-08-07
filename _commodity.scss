@@ -1,0 +1,49 @@
+@import"grid";
+ /*content-start*/
+      
+ .bg-breadcrumb{
+    background-color: transparent;
+  }      
+  .breadcrumb a{
+    color:#f0648f ;
+  }
+  .badge-main{
+    background-color: #f0648f ;
+    color:white;
+  }      
+  
+   .button-card-maincolor{
+     background-color: #f0648f ;
+     border:none ;
+     color:#f8f9fa;
+     line-height: 1.5;
+     text-decoration: none;
+     border:none;
+     box-shadow:none !important;
+     margin-top:10px;
+    }  
+  .button-card-maincolor:hover{
+     color:#f8f9fa;
+     border-bottom:5px solid #f33577;
+     margin-top:5px; 
+     transition:all .5s;
+     @include medium(){
+      background-color:  #f33577;
+     border:none;
+     margin-top:10px; 
+     transition:all 0s;  
+  } 
+    } 
+  
+  //    @media(max-width: 768px){
+  // .button-card-maincolor:hover{
+  //    background-color:  #f33577;
+  //    border:none;
+  //    margin-top:10px; 
+  //    transition:all 0s;
+  //   } 
+  //   }
+      
+  
+  
+  /*content-end*/

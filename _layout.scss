@@ -1,0 +1,145 @@
+@import"grid";
+body{
+    font-family:Microsoft JhengHei;
+    
+  }
+  body li{
+    list-style:none;
+  }
+  
+  body a{
+    text-decoration: none  !important;
+  }
+  
+  .nav-height{
+    height:70px ;
+    @include large(){
+      height:auto ;  
+  }
+  }  
+  // @media(max-width: 992px){
+  //   .nav-height{
+  //   height:auto ;
+  // }  
+  // }
+  
+  .nav-li-height{
+    height: 100%;
+     height:auto ;
+     @include large(){
+    height: auto;  
+  }
+  }
+  // @media(max-width: 992px){
+  //   .nav-li-height{
+  //   height: auto;
+  // }
+  // }
+  
+  .nav-li-border{
+    margin-top:3px;
+    margin-bottom:3px;
+    transition:all .5s;
+    @include large(){
+      margin:0;  
+    }
+   }
+  
+  .nav-li-border:hover{
+   
+    border-bottom: 3px solid #f0648f;
+    margin-bottom:0px;
+    @include large(){
+      border-bottom: none;
+      margin-bottom:0px;
+      margin-top:0px;  
+    }
+  }
+
+  //  @media(max-width: 992px){
+  //   .nav-li-border{
+  //     margin:0;
+  //    } 
+  //   .nav-li-border:hover{
+  //   border-bottom: none;
+  //   margin-bottom:0px;
+  //   margin-top:0px;
+  // }
+  // }
+   
+   .navbar-toggler-icon{
+     background-image: none!important;
+     color:#f0648f;
+     display: flex;
+     align-items:center;
+     justify-content:center;
+     
+     }
+  
+  
+   @media(max-width: 992px){
+    .searchbar-flex{
+      display:flex;
+      flex-direction:row-reverse;
+      justify-content:flex-end;
+      
+     }
+     
+     
+  }
+    
+  .search-icon {
+    background-color:transparent;
+    border-radius: 50%;
+    border:2px solid #f0648f;
+    color:#f0648f;
+  }
+  .search-icon:hover {
+    background-color:#f0648f!important;
+    color:#f8f9fa!important;
+  }
+  
+  .form-control:focus {
+    border-color:#ced4da;
+    box-shadow:none;
+  }
+  
+  .animated{
+  opacity:0;
+  transform:translateY(-200px);
+  }
+
+  .fadeIn{
+  opacity:1;
+  transform:translateY(0px);
+  }
+  
+  /*navbar-end*/
+
+
+  /*footer-start*/
+  .footer-bg{
+    background-color: #f0648f ;
+  }
+  .footer-list-title{
+    text-indent:-9px;
+  }
+        
+  .footer-list ul li a{
+    color:#f8f9fa;
+  }
+  .footer-list ul li a:hover{
+    color:#65F074;
+    transition:all .4s;
+  }
+  
+  @media(max-width: 768px){
+   
+  .footer-list ul li {
+    font-size:1.5em;
+    margin-bottom:10px;
+    
+  } 
+  }
+  
+  /*footer-end*/

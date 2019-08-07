@@ -1,0 +1,235 @@
+
+  @import"grid";
+        
+  .carousel-radius{
+    border-radius: 50%;
+    height:10px!important;
+    width:10px!important;
+  }
+  // .carousel-indicators li {
+  //   background-color: #f0648f ;
+  // }
+  .carousel-bg{
+    background-size:cover;
+    background-position:center center;
+    height:70vh;
+    @include large(){
+      height:60vh;  
+  }
+    @include small(){
+      height:40vh;
+    }
+    
+  }
+  // @media(max-width: 992px){
+  //   .carousel-bg{
+  //   height:60vh;
+    
+  // }
+  // }
+  //  @media(max-width: 576px){
+  //   .carousel-bg{
+  //   height:40vh;
+  // }  
+  // }
+
+  .part-line{
+    border-bottom:2px solid #f0648f;
+    padding-bottom:10px;
+  }
+  
+  .index-meau-list-style{
+    border:1px dashed  #f0648f;
+    color:#f0648f;
+    }
+  
+  .list-group-item-action:hover {
+   color: #f0648f;
+    }
+  
+/*    .index-list-bg{
+    
+    background-position: center center;
+    background-size: cover;
+    height:150px;
+  }
+  
+  .index-list-button{
+    height:150px;
+  }
+ 
+  .index-list-button a{
+    display: block;
+    background-color: rgba(101,240,116,0.2);
+    text-decoration:none;
+    position: relative;
+    transition:all 1s;
+    
+    
+  }
+  
+  .index-list-button span{
+    color:#f0648f
+  }
+  
+  .index-list-button:hover a{
+    background-color: rgba(240,100,143,0.7);
+    
+  }
+  
+   .index-list-button:hover span{
+    
+    color:#f8f9fa;
+  }
+  
+  .index-list-button-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url(http://lorempixel.com/400/200);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(3px);
+    transform:scale(1.25);
+    transition:transform 1s;
+  }
+  
+  .index-list-button:hover .index-list-button-bg{
+    filter: blur(0px);
+    transform:scale(1);
+  }*/
+  /*list-button-end*/
+  
+  /*card style-start*/
+  
+  .list-group-item.active {
+    background-color: #f0648f;
+    border-color:#f0648f;
+    color:#fff;
+  }
+  
+  
+  .index-card-cart-mark{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;        
+    transform: translate(15px,0px);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition:all 1s;
+    z-index: -1;
+    
+  }
+  
+  .index-card-cart-mark:hover{
+    background-color: #f0648f;
+  }
+  .index-card-cart-mark:hover i{
+    color:#f8f9fa !important;
+  }
+  
+  .index-card-img:hover .index-card-cart-mark{
+    z-index: 1;
+    transform: translate(15px,190px);
+    @include xlarge(){
+      z-index: 1;
+      transform: translate(15px,150px);
+    }
+    
+  }
+  
+  // @media(max-width: 1200px){
+  //   .index-card-img:hover .index-card-cart-mark{
+  //   z-index: 1;
+  //   transform: translate(15px,150px);
+  //   }
+  // }
+  
+  @media(max-width: 992px){
+    .index-card-cart-mark{
+      transform: translate(0px,0px);
+      position: absolute;
+      right:10px;
+      bottom:10px;
+      z-index: 1;
+      
+    }
+    .index-card-img:hover .index-card-cart-mark{
+   
+    transform: translate(0px,0px);
+  }
+    
+       }
+  
+  .index-card-img img{
+    transition:transform 1s;
+  }
+  
+  .index-card-img:hover  img{
+     transform:scale(1.2);
+     @include medium(){
+      transform:scale(1);
+    }
+  }
+  // @media(max-width: 768px){
+  // .index-card-img:hover  img{
+  //    transform:scale(1);  
+  // }
+  //   }
+   
+ .button-card-maincolor{
+     background-color: #f0648f ;
+     border:none ;
+     color:#f8f9fa;
+     line-height: 1.5;
+     text-decoration: none;
+     border:none;
+     box-shadow:none !important;
+     margin-top:10px;
+    }  
+  .button-card-maincolor:hover{
+     color:#f8f9fa;
+     border-bottom:5px solid #f33577;
+     margin-top:5px; 
+     transition:all .5s;
+     @include medium(){
+     background-color:  #f33577;
+     border:none;
+     margin-top:10px; 
+     transition:all 0s;
+    } 
+    } 
+ 
+  //    @media(max-width: 768px){
+  // .button-card-maincolor:hover{
+  //    background-color:  #f33577;
+  //    border:none;
+  //    margin-top:10px; 
+  //    transition:all 0s;
+  //   } 
+  //   }
+    
+  /*card style-end*/  
+  
+  /*pagination style-start*/
+  .page-link {
+    color:#f0648f ;
+  }
+  .page-item.active .page-link {
+    background-color:#f0648f ;
+    border-color:#f0648f;
+  }
+  .pagination a{
+    border-color:#f0648f !important;
+  }
+  .page-link:hover {
+    color:#f33577;
+  }
+  /*pagination style-end*/
+  
+  
+  
